@@ -4,7 +4,7 @@ import { ArrowRight } from "phosphor-react";
 import { Button, ButtonProps } from "@my-ui/react";
 
 export default {
-  title: "Data display/Button",
+  title: "Form/Button",
   component: Button,
   tags: ["autodocs"],
   args: {
