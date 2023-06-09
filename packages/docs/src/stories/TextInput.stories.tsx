@@ -21,7 +21,7 @@ export default {
   ],
 } as Meta;
 
-export const Primary: StoryObj<TextInputProps> = {
+export const Default: StoryObj<TextInputProps> = {
   args: {
     placeholder: "Type your name",
   },

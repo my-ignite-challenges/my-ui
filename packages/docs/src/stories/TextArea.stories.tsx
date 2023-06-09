@@ -21,7 +21,7 @@ export default {
   ],
 } as Meta;
 
-export const Primary: StoryObj<TextAreaProps> = {
+export const Default: StoryObj<TextAreaProps> = {
   args: {
     placeholder: "Type the description here...",
   },

@@ -9,19 +9,39 @@ export default {
   tags: ["autodocs"],
   args: {
     children: "Send",
+    variant: "default",
+    size: "md",
+    disabled: false,
   } as Meta<ButtonProps>,
   argTypes: {
+    variant: {
+      options: ["default", "outlined", "text"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    size: {
+      options: ["sm", "md"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    disabled: {
+      control: {
+        type: "boolean",
+      },
+    },
     onClick: {
       action: "click",
     },
   },
 };
 
-export const Primary: StoryObj<ButtonProps> = {};
+export const Default: StoryObj<ButtonProps> = {};
 
-export const Secondary: StoryObj<ButtonProps> = {
+export const Outlined: StoryObj<ButtonProps> = {
   args: {
-    variant: "secondary",
+    variant: "outlined",
     children: "Preview",
   },
 };

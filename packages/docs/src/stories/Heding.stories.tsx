@@ -8,10 +8,19 @@ export default {
   tags: ["autodocs"],
   args: {
     children: "Lorem, ipsum.",
+    size: "md",
   } as Meta<HeadingProps>,
+  argTypes: {
+    size: {
+      options: ["sm", "md", "lg", "2xl", "4xl", "5xl", "6xl"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+  },
 };
 
-export const Primary: StoryObj<HeadingProps> = {};
+export const Default: StoryObj<HeadingProps> = {};
 export const CustomTag: StoryObj<HeadingProps> = {
   args: {
     children: "H1 Heading",

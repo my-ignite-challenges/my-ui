@@ -29,7 +29,7 @@ export const Button = styled("button", {
 
   variants: {
     variant: {
-      primary: {
+      default: {
         color: "$white",
         background: "$myui500",
 
@@ -41,7 +41,7 @@ export const Button = styled("button", {
           background: "$gray200",
         },
       },
-      secondary: {
+      outlined: {
         color: "$myui300",
         border: "2px solid $myui500",
 
@@ -80,7 +80,7 @@ export const Button = styled("button", {
   },
 
   defaultVariants: {
-    variant: "primary",
+    variant: "default",
     size: "md",
   },
 });

@@ -9,9 +9,16 @@ export default {
     src: "https://i.pravatar.cc",
     alt: "",
   } as Meta<AvatarProps>,
+  argTypes: {
+    src: {
+      control: {
+        type: "text",
+      },
+    },
+  },
 };
 
-export const Primary: StoryObj<AvatarProps> = {};
+export const Default: StoryObj<AvatarProps> = {};
 
 export const WithFallback: StoryObj<AvatarProps> = {
   args: {
